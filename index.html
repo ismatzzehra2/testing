@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROSOI – Restaurant</title>
+    <title>ROSOI – Restaurant & Hotel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav>
+        <div class="container nav-container">
+            <h1 class="logo">ROSOI</h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+        </div>
+    </nav>
+
+    <header id="home">
         <div class="container">
             <h1 class="logo">ROSOI</h1>
             <p class="tagline">Skardu</p>
@@ -16,7 +29,8 @@
 
     <main>
         <section class="hero">
-            <div class="container">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80" alt="Restaurant interior" class="hero-img">
+            <div class="hero-overlay">
                 <h2>Welcome to ROSOI</h2>
                 <p>Authentic flavors, minimalist space.</p>
             </div>
@@ -39,10 +53,82 @@
             </div>
         </section>
 
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Margherita Pizza" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Margherita Pizza</h3>
+                            <p class="menu-desc">Fresh mozzarella, basil, tomato sauce</p>
+                            <span class="menu-price">PKR 890</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Pancakes" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Buttermilk Pancakes</h3>
+                            <p class="menu-desc">Served with maple syrup & fresh berries</p>
+                            <span class="menu-price">PKR 690</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Caesar Salad" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Caesar Salad</h3>
+                            <p class="menu-desc">Romaine, parmesan, croutons, house dressing</p>
+                            <span class="menu-price">PKR 590</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Grilled Chicken" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Grilled Chicken</h3>
+                            <p class="menu-desc">Herb-marinated with roasted vegetables</p>
+                            <span class="menu-price">PKR 1,190</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&q=80" alt="Burger" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Classic Burger</h3>
+                            <p class="menu-desc">Beef patty, cheddar, lettuce, special sauce</p>
+                            <span class="menu-price">PKR 790</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Dessert" class="menu-img">
+                        <div class="menu-info">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p class="menu-desc">Warm molten center with vanilla ice cream</p>
+                            <span class="menu-price">PKR 490</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Restaurant dining" class="about-img">
+                <p>ROSOI brings the rich culinary traditions of Skardu to your plate. Every dish is crafted with locally sourced ingredients and a passion for authentic flavors.</p>
+            </div>
+        </section>
+
         <section class="hours">
             <div class="container">
                 <h2>Hours</h2>
-                <p id="status">Loading…</p>
+                <p id="status">Loading&hellip;</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p>Phone: <a href="tel:+923436847475">0343 6847475</a></p>
+                <p>Location: Skardu, Pakistan</p>
             </div>
         </section>
     </main>

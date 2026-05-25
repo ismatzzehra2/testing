@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: #fafaf9;
@@ -12,12 +16,69 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 64px;
 }
 
 .container {
     max-width: 640px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+/* --- Navigation --- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #636366;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.nav-links a:hover {
+    color: #1c1c1e;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1c1c1e;
 }
 
 /* --- Header --- */
@@ -43,19 +104,40 @@ header {
 
 /* --- Hero --- */
 .hero {
-    padding: 40px 0;
-    text-align: center;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
 }
 
-.hero h2 {
-    font-size: 1.5rem;
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+.hero-overlay h2 {
+    font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 8px;
 }
 
-.hero p {
-    color: #636366;
-    font-size: 0.95rem;
+.hero-overlay p {
+    font-size: 1rem;
+    opacity: .9;
 }
 
 /* --- Info Cards --- */
@@ -100,6 +182,88 @@ header {
     text-decoration: underline;
 }
 
+/* --- Section Titles --- */
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* --- Menu Section --- */
+.menu-section {
+    padding: 64px 0 48px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+
+.menu-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.menu-info {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.menu-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.menu-desc {
+    font-size: 0.8rem;
+    color: #8e8e93;
+    margin-bottom: 8px;
+}
+
+.menu-price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2b8a3e;
+}
+
+/* --- About Section --- */
+.about-section {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #636366;
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
 /* --- Hours --- */
 .hours {
     padding: 40px 0;
@@ -119,6 +283,27 @@ header {
     font-size: 1rem;
 }
 
+/* --- Contact --- */
+.contact-section {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.contact-section a {
+    color: #1c1c1e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
 /* --- Footer --- */
 footer {
     margin-top: auto;
@@ -126,4 +311,45 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     color: #8e8e93;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,.08);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 16px 24px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-img {
+        width: 100%;
+        height: 180px;
+    }
 }
