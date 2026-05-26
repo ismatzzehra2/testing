@@ -1,1 +1,43 @@
-## Hello
+Redesign the entire restaurant website with a modern luxury aesthetic. Change the current theme into a warm and elegant style using dark backgrounds, soft golden accents, smooth animations, glassmorphism effects, and premium typography. Make the homepage visually attractive, responsive, and professional on both mobile and desktop.
+
+Add high-quality food images for every dish section with stylish hover effects and clean card layouts. Create separate sections for:
+
+* Popular Dishes
+* Special Deals
+* Chef’s Recommendations
+* Desserts
+* Drinks
+
+Add these dishes with beautiful pictures, prices, and short descriptions:
+
+* Chicken Biryani
+* Zinger Burger
+* Alfredo Pasta
+* Chicken Karahi
+* BBQ Platter
+* Pizza Supreme
+* Grilled Sandwich
+* Crispy Fries
+* Chocolate Lava Cake
+* Mint Margarita
+
+Improve the website UI by:
+
+* Adding smooth scrolling animations
+* Modern navbar with transparent effect
+* Attractive hero section with restaurant background image
+* Stylish buttons with hover glow
+* Elegant menu cards with shadows
+* Modern footer with social media icons
+* Customer reviews/testimonials section
+* Online reservation section
+* Gallery section with aesthetic food images
+
+Use a premium color palette like:
+
+* Black / Dark Charcoal
+* Gold
+* Cream White
+* Warm Orange highlights
+
+Make the whole website look luxurious, aesthetic, minimal, and visually engaging like a high-end restaurant brand. Add more spacing, modern fonts, and clean layouts to improve the overall user experience.

@@ -3,139 +3,533 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROSOI – Restaurant & Hotel</title>
+    <title>ROSOI – Luxury Dining & Hotel | Skardu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="container nav-container">
-            <h1 class="logo">ROSOI</h1>
+            <a href="#home" class="logo">ROSOI</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reservation">Reserve</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
-    <header id="home">
-        <div class="container">
-            <h1 class="logo">ROSOI</h1>
-            <p class="tagline">Skardu</p>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-suptitle">Welcome to</p>
+            <h1 class="hero-title">ROSOI</h1>
+            <p class="hero-subtitle">An Exquisite Dining Experience in the Heart of Skardu</p>
+            <div class="hero-actions">
+                <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+                <a href="#menu" class="btn btn-outline">Explore Menu</a>
+            </div>
         </div>
-    </header>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80" alt="Restaurant interior" class="hero-img">
-            <div class="hero-overlay">
-                <h2>Welcome to ROSOI</h2>
-                <p>Authentic flavors, minimalist space.</p>
+    <section class="info-strip">
+        <div class="container info-grid">
+            <div class="info-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Owner</h3>
+                <p>Zafar</p>
             </div>
-        </section>
-
-        <section class="info">
-            <div class="container">
-                <div class="card">
-                    <h3>Owner</h3>
-                    <p>Zafar</p>
-                </div>
-                <div class="card">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+923436847475">0343 6847475</a></p>
-                </div>
-                <div class="card">
-                    <h3>Location</h3>
-                    <p>Skardu, Pakistan</p>
-                </div>
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+923436847475">0343 6847475</a></p>
             </div>
-        </section>
-
-        <section id="menu" class="menu-section">
-            <div class="container">
-                <h2 class="section-title">Our Menu</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Margherita Pizza" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Margherita Pizza</h3>
-                            <p class="menu-desc">Fresh mozzarella, basil, tomato sauce</p>
-                            <span class="menu-price">PKR 890</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Pancakes" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Buttermilk Pancakes</h3>
-                            <p class="menu-desc">Served with maple syrup & fresh berries</p>
-                            <span class="menu-price">PKR 690</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Caesar Salad" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Caesar Salad</h3>
-                            <p class="menu-desc">Romaine, parmesan, croutons, house dressing</p>
-                            <span class="menu-price">PKR 590</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Grilled Chicken" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Grilled Chicken</h3>
-                            <p class="menu-desc">Herb-marinated with roasted vegetables</p>
-                            <span class="menu-price">PKR 1,190</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&q=80" alt="Burger" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Classic Burger</h3>
-                            <p class="menu-desc">Beef patty, cheddar, lettuce, special sauce</p>
-                            <span class="menu-price">PKR 790</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Dessert" class="menu-img">
-                        <div class="menu-info">
-                            <h3>Chocolate Lava Cake</h3>
-                            <p class="menu-desc">Warm molten center with vanilla ice cream</p>
-                            <span class="menu-price">PKR 490</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Skardu, Pakistan</p>
             </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Restaurant dining" class="about-img">
-                <p>ROSOI brings the rich culinary traditions of Skardu to your plate. Every dish is crafted with locally sourced ingredients and a passion for authentic flavors.</p>
-            </div>
-        </section>
-
-        <section class="hours">
-            <div class="container">
-                <h2>Hours</h2>
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Hours</h3>
                 <p id="status">Loading&hellip;</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p>Phone: <a href="tel:+923436847475">0343 6847475</a></p>
-                <p>Location: Skardu, Pakistan</p>
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Offerings</span>
+                <h2 class="section-title">Popular Dishes</h2>
+                <p class="section-desc">Handpicked favorites that keep our guests coming back</p>
             </div>
-        </section>
-    </main>
+            <div class="dish-grid" id="popular-dishes">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Biryani">
+                        <div class="dish-overlay">
+                            <span class="dish-tag">Popular</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Chicken Biryani</h3>
+                        <p>Fragrant basmati layered with spiced chicken, saffron, and caramelized onions</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 890</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger">
+                        <div class="dish-overlay">
+                            <span class="dish-tag">Popular</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Zinger Burger</h3>
+                        <p>Crispy chicken fillet with fresh lettuce, mayo, and our secret spice blend</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 690</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&q=80" alt="Alfredo Pasta">
+                        <div class="dish-overlay">
+                            <span class="dish-tag">Popular</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Alfredo Pasta</h3>
+                        <p>Creamy parmesan sauce with garlic, herbs, and perfectly cooked fettuccine</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 790</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section deals-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Best Value</span>
+                <h2 class="section-title">Special Deals</h2>
+                <p class="section-desc">Exclusive combinations crafted for an unforgettable meal</p>
+            </div>
+            <div class="dish-grid" id="special-deals">
+                <div class="dish-card deal-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" alt="BBQ Platter">
+                        <div class="dish-overlay">
+                            <span class="dish-tag deal-tag">-20%</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>BBQ Platter</h3>
+                        <p>Mixed grill of seekh kebabs, chicken tikka, and boti with naan & chutney</p>
+                        <div class="dish-footer">
+                            <span class="dish-price"><span class="old-price">PKR 1,890</span> PKR 1,490</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card deal-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza Supreme">
+                        <div class="dish-overlay">
+                            <span class="dish-tag deal-tag">-15%</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pizza Supreme</h3>
+                        <p>Loaded with pepperoni, mushrooms, bell peppers, olives, and extra mozzarella</p>
+                        <div class="dish-footer">
+                            <span class="dish-price"><span class="old-price">PKR 1,290</span> PKR 1,090</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card deal-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80" alt="Crispy Fries">
+                        <div class="dish-overlay">
+                            <span class="dish-tag deal-tag">Combo</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Crispy Fries + Drink</h3>
+                        <p>Golden fries seasoned with herbs, served with a chilled mint margarita</p>
+                        <div class="dish-footer">
+                            <span class="dish-price"><span class="old-price">PKR 590</span> PKR 450</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section chefs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">From Our Kitchen</span>
+                <h2 class="section-title">Chef's Recommendations</h2>
+                <p class="section-desc">Signature dishes curated by our head chef</p>
+            </div>
+            <div class="dish-grid" id="chef-dishes">
+                <div class="dish-card chef-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Chicken Karahi">
+                        <div class="dish-overlay">
+                            <span class="dish-tag chef-tag">Chef's Special</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Chicken Karahi</h3>
+                        <p>Traditional wok-cooked chicken with tomatoes, ginger, and aromatic spices</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 1,190</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card chef-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80" alt="Grilled Sandwich">
+                        <div class="dish-overlay">
+                            <span class="dish-tag chef-tag">Chef's Special</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Grilled Sandwich</h3>
+                        <p>Toasted sourdough with grilled vegetables, melted cheddar, and pesto drizzle</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 590</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section desserts-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sweet Indulgence</span>
+                <h2 class="section-title">Desserts & Drinks</h2>
+                <p class="section-desc">The perfect finish to your culinary journey</p>
+            </div>
+            <div class="dish-grid" id="desserts-drinks">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" alt="Chocolate Lava Cake">
+                        <div class="dish-overlay">
+                            <span class="dish-tag">Dessert</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm molten dark chocolate center served with vanilla bean ice cream</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 590</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Mint Margarita">
+                        <div class="dish-overlay">
+                            <span class="dish-tag">Drink</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Mint Margarita</h3>
+                        <p>Refreshing blend of fresh mint, lime, and sparkling soda over crushed ice</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 390</span>
+                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Journey</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <p class="section-desc">A glimpse into the world of ROSOI</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant interior">
+                    <div class="gallery-overlay"><span>Elegant Dining</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Dining setup">
+                    <div class="gallery-overlay"><span>Fine Ambiance</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant interior">
+                    <div class="gallery-overlay"><span>Warm Atmosphere</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Restaurant">
+                    <div class="gallery-overlay"><span>Cozy Corner</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=600&q=80" alt="Restaurant interior">
+                    <div class="gallery-overlay"><span>Modern Design</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Cocktail">
+                    <div class="gallery-overlay"><span>Signature Drinks</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Guest Voices</span>
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-desc">What our guests say about their experience</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">The finest dining experience in Skardu. The Chicken Karahi is absolutely divine — rich, aromatic, and perfectly spiced.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">A</div>
+                        <div>
+                            <h4>Ahmed Khan</h4>
+                            <span>Regular Guest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Beautiful ambiance and impeccable service. The dessert selection is world-class — don't miss the Chocolate Lava Cake!</p>
+                    <div class="review-author">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <h4>Sara Ali</h4>
+                            <span>Food Critic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">Exceptional value for money. The BBQ Platter deal is incredible — generous portions and authentic flavors.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">R</div>
+                        <div>
+                            <h4>Rizwan Malik</h4>
+                            <span>Travel Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section reservation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Book a Table</span>
+                <h2 class="section-title">Make a Reservation</h2>
+                <p class="section-desc">Reserve your table for an unforgettable evening</p>
+            </div>
+            <div class="reservation-wrapper">
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-name">Your Name</label>
+                            <input type="text" id="res-name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-email">Email Address</label>
+                            <input type="email" id="res-email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Date</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Time</label>
+                            <input type="time" id="res-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-guests">Guests</label>
+                            <select id="res-guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-message">Special Requests</label>
+                        <textarea id="res-message" placeholder="Any dietary requirements or special occasion?" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-calendar-check"></i> Confirm Reservation
+                    </button>
+                </form>
+                <div class="reservation-info">
+                    <div class="res-info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+923436847475">0343 6847475</a></p>
+                    </div>
+                    <div class="res-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Visit Us</h4>
+                        <p>Skardu, Pakistan</p>
+                    </div>
+                    <div class="res-info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Working Hours</h4>
+                        <p>Mon–Fri, 10:00 AM – 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="About ROSOI">
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title about-title">About ROSOI</h2>
+                    <p>ROSOI brings the rich culinary traditions of Skardu to your plate. Every dish is crafted with locally sourced ingredients and a passion for authentic flavors, blending timeless recipes with modern presentation.</p>
+                    <p>Our team of dedicated chefs works tirelessly to ensure every meal is a celebration of taste, culture, and hospitality. We believe in creating not just food, but memories that linger long after the last bite.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Years of Service</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="5000">0</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-desc">We'd love to hear from you</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+923436847475">0343 6847475</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Skardu, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@rosoi.pk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 ROSOI &middot; Skardu</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>ROSOI</h2>
+                    <p>Exquisite dining in the heart of Skardu. Where tradition meets elegance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ROSOI &middot; Skardu, Pakistan. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
