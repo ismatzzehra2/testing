@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROSOI – Luxury Dining & Hotel | Skardu</title>
+    <title>RASOIE – Bold Flavors. Premium Taste.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="#home" class="logo">ROSOI</a>
+            <a href="#home" class="logo">RASOIE</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#best-sellers">Menu</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#fast-food">Fast Food</a></li>
+                <li><a href="#bbq">BBQ</a></li>
                 <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#reservation">Reserve</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <div class="nav-actions">
+                <a href="https://wa.me/923436847475" target="_blank" class="btn-whatsapp-nav"><i class="fab fa-whatsapp"></i></a>
+                <button class="btn btn-primary btn-order-now" id="orderNowBtn"><i class="fas fa-shopping-bag"></i> Order Now</button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
+        <div class="hero-bg-particles" id="particles"></div>
         <div class="hero-content">
-            <p class="hero-suptitle">Welcome to</p>
-            <h1 class="hero-title">ROSOI</h1>
-            <p class="hero-subtitle">An Exquisite Dining Experience in the Heart of Skardu</p>
+            <div class="hero-badge">Premium Dining Since 2011</div>
+            <h1 class="hero-title">Bold Flavors.<br><span>Premium Taste.</span></h1>
+            <p class="hero-subtitle">Experience the perfect blend of traditional recipes and modern culinary artistry — where every bite tells a story of passion.</p>
             <div class="hero-actions">
-                <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
-                <a href="#menu" class="btn btn-outline">Explore Menu</a>
+                <a href="#best-sellers" class="btn btn-primary btn-glow"><i class="fas fa-utensils"></i> Explore Menu</a>
+                <a href="https://wa.me/923436847475" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+            </div>
+            <div class="hero-strip">
+                <div class="hero-strip-item"><i class="fas fa-clock"></i> 10 AM – 10 PM</div>
+                <div class="hero-strip-item"><i class="fas fa-truck"></i> Free Delivery</div>
+                <div class="hero-strip-item"><i class="fas fa-star"></i> 4.8 Rating</div>
             </div>
         </div>
         <div class="hero-scroll">
@@ -44,84 +55,235 @@
         </div>
     </section>
 
-    <section class="info-strip">
-        <div class="container info-grid">
-            <div class="info-card">
-                <i class="fas fa-user-tie"></i>
-                <h3>Owner</h3>
-                <p>Zafar</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-phone-alt"></i>
-                <h3>Phone</h3>
-                <p><a href="tel:+923436847475">0343 6847475</a></p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Location</h3>
-                <p>Skardu, Pakistan</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-clock"></i>
-                <h3>Hours</h3>
-                <p id="status">Loading&hellip;</p>
+    <section class="delivery-strip">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-item">
+                    <div class="delivery-icon"><i class="fas fa-truck-fast"></i></div>
+                    <div>
+                        <h3>Free Delivery</h3>
+                        <p>On orders above PKR 1,000</p>
+                    </div>
+                </div>
+                <div class="delivery-item">
+                    <div class="delivery-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h3>30 Min or Free</h3>
+                        <p>Lightning fast delivery</p>
+                    </div>
+                </div>
+                <div class="delivery-item">
+                    <div class="delivery-icon"><i class="fas fa-wallet"></i></div>
+                    <div>
+                        <h3>Easy Payment</h3>
+                        <p>Cash, Card, JazzCash</p>
+                    </div>
+                </div>
+                <div class="delivery-item">
+                    <div class="delivery-icon"><i class="fas fa-percentage"></i></div>
+                    <div>
+                        <h3>Daily Deals</h3>
+                        <p>New offers every day</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="menu" class="section menu-section">
+    <section id="best-sellers" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Our Offerings</span>
-                <h2 class="section-title">Popular Dishes</h2>
-                <p class="section-desc">Handpicked favorites that keep our guests coming back</p>
+                <span class="section-tag"><i class="fas fa-fire"></i> Best Sellers</span>
+                <h2 class="section-title">Most Popular Dishes</h2>
+                <p class="section-desc">Our guests can't get enough of these fan-favorite picks</p>
             </div>
             <div class="dish-grid" id="popular-dishes">
                 <div class="dish-card">
                     <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Biryani">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger" loading="lazy">
                         <div class="dish-overlay">
-                            <span class="dish-tag">Popular</span>
+                            <span class="dish-tag bestseller-tag"><i class="fas fa-crown"></i> Bestseller</span>
                         </div>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
                     </div>
                     <div class="dish-info">
-                        <h3>Chicken Biryani</h3>
-                        <p>Fragrant basmati layered with spiced chicken, saffron, and caramelized onions</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">PKR 890</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger">
-                        <div class="dish-overlay">
-                            <span class="dish-tag">Popular</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(124)</span></div>
                         <h3>Zinger Burger</h3>
-                        <p>Crispy chicken fillet with fresh lettuce, mayo, and our secret spice blend</p>
+                        <p>Crispy golden chicken fillet with fresh lettuce, mayo & secret spice blend</p>
                         <div class="dish-footer">
                             <span class="dish-price">PKR 690</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="dish-card">
                     <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&q=80" alt="Alfredo Pasta">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Biryani" loading="lazy">
                         <div class="dish-overlay">
+                            <span class="dish-tag bestseller-tag"><i class="fas fa-crown"></i> Bestseller</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(208)</span></div>
+                        <h3>Chicken Biryani</h3>
+                        <p>Fragrant basmati layered with spiced chicken, saffron & caramelized onions</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 890</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Loaded Pizza" loading="lazy">
+                        <div class="dish-overlay">
+                            <span class="dish-tag bestseller-tag"><i class="fas fa-crown"></i> Bestseller</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(167)</span></div>
+                        <h3>Loaded Pizza</h3>
+                        <p>Pepperoni, mushrooms, bell peppers, olives & extra mozzarella on crispy crust</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 1,290</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80" alt="Crispy Broast" loading="lazy">
+                        <div class="dish-overlay">
+                            <span class="dish-tag bestseller-tag"><i class="fas fa-crown"></i> Bestseller</span>
+                        </div>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(98)</span></div>
+                        <h3>Crispy Broast</h3>
+                        <p>Juicy marinated chicken, double-breaded & fried to golden perfection</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 790</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deals" class="section deals-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tags"></i> Special Deals</span>
+                <h2 class="section-title">Today's Best Offers</h2>
+                <p class="section-desc">Limited-time combos crafted to satisfy your cravings</p>
+            </div>
+            <div class="deals-grid">
+                <div class="deal-card featured-deal">
+                    <div class="deal-img">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80" alt="BBQ Platter" loading="lazy">
+                        <div class="deal-badge">-20%</div>
+                    </div>
+                    <div class="deal-body">
+                        <h3>BBQ Platter for 2</h3>
+                        <p>Seekh kebabs, chicken tikka, boti, naan & chutney — feast for two!</p>
+                        <div class="deal-footer">
+                            <div class="deal-price"><span class="old-price">PKR 1,890</span> PKR 1,490</div>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Family Pizza Deal" loading="lazy">
+                        <div class="deal-badge">-15%</div>
+                    </div>
+                    <div class="deal-body">
+                        <h3>Family Pizza Combo</h3>
+                        <p>2 Large pizzas + 2 drinks + garlic bread — perfect for the family</p>
+                        <div class="deal-footer">
+                            <div class="deal-price"><span class="old-price">PKR 2,290</span> PKR 1,890</div>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80" alt="Fries Bucket" loading="lazy">
+                        <div class="deal-badge">Combo</div>
+                    </div>
+                    <div class="deal-body">
+                        <h3>Fries Bucket + Drink</h3>
+                        <p>Golden seasoned fries + chilled mint margarita — the ultimate snack</p>
+                        <div class="deal-footer">
+                            <div class="deal-price"><span class="old-price">PKR 590</span> PKR 450</div>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section family-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-users"></i> Family Meals</span>
+                <h2 class="section-title">Feast for the Whole Family</h2>
+                <p class="section-desc">Generous portions made for sharing and creating memories</p>
+            </div>
+            <div class="family-grid">
+                <div class="family-card">
+                    <div class="family-img">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" alt="Family Broast Bucket" loading="lazy">
+                        <div class="family-overlay">
+                            <span class="dish-tag">Best Value</span>
+                        </div>
+                    </div>
+                    <div class="family-body">
+                        <h3>Family Broast Bucket</h3>
+                        <p>8 pcs crispy broast + 4 rolls + large fries + 1.5L drink</p>
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(84)</span></div>
+                        <div class="family-footer">
+                            <span class="dish-price">PKR 2,490</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="family-card">
+                    <div class="family-img">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800&q=80" alt="Family BBQ Platter" loading="lazy">
+                        <div class="family-overlay">
                             <span class="dish-tag">Popular</span>
                         </div>
                     </div>
-                    <div class="dish-info">
-                        <h3>Alfredo Pasta</h3>
-                        <p>Creamy parmesan sauce with garlic, herbs, and perfectly cooked fettuccine</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">PKR 790</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                    <div class="family-body">
+                        <h3>Family BBQ Platter</h3>
+                        <p>Assorted BBQ + 6 naans + 2 raita + salad + 2 drinks</p>
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(112)</span></div>
+                        <div class="family-footer">
+                            <span class="dish-price">PKR 3,490</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="family-card">
+                    <div class="family-img">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80" alt="Family Biryani" loading="lazy">
+                        <div class="family-overlay">
+                            <span class="dish-tag">For 4</span>
+                        </div>
+                    </div>
+                    <div class="family-body">
+                        <h3>Family Biryani Pack</h3>
+                        <p>Large chicken biryani + 4 drinks + raita + 2 salads</p>
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(76)</span></div>
+                        <div class="family-footer">
+                            <span class="dish-price">PKR 1,890</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Order</button>
                         </div>
                     </div>
                 </div>
@@ -129,147 +291,293 @@
         </div>
     </section>
 
-    <section class="section deals-section">
+    <section id="fast-food" class="section fastfood-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Best Value</span>
-                <h2 class="section-title">Special Deals</h2>
-                <p class="section-desc">Exclusive combinations crafted for an unforgettable meal</p>
+                <span class="section-tag"><i class="fas fa-burger"></i> Fast Food Collection</span>
+                <h2 class="section-title">Cravings, Meet Your Match</h2>
+                <p class="section-desc">From crispy burgers to spicy wings — we've got you covered</p>
             </div>
-            <div class="dish-grid" id="special-deals">
-                <div class="dish-card deal-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" alt="BBQ Platter">
-                        <div class="dish-overlay">
-                            <span class="dish-tag deal-tag">-20%</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3>BBQ Platter</h3>
-                        <p>Mixed grill of seekh kebabs, chicken tikka, and boti with naan & chutney</p>
-                        <div class="dish-footer">
-                            <span class="dish-price"><span class="old-price">PKR 1,890</span> PKR 1,490</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card deal-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza Supreme">
-                        <div class="dish-overlay">
-                            <span class="dish-tag deal-tag">-15%</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Pizza Supreme</h3>
-                        <p>Loaded with pepperoni, mushrooms, bell peppers, olives, and extra mozzarella</p>
-                        <div class="dish-footer">
-                            <span class="dish-price"><span class="old-price">PKR 1,290</span> PKR 1,090</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card deal-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80" alt="Crispy Fries">
-                        <div class="dish-overlay">
-                            <span class="dish-tag deal-tag">Combo</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Crispy Fries + Drink</h3>
-                        <p>Golden fries seasoned with herbs, served with a chilled mint margarita</p>
-                        <div class="dish-footer">
-                            <span class="dish-price"><span class="old-price">PKR 590</span> PKR 450</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section chefs-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">From Our Kitchen</span>
-                <h2 class="section-title">Chef's Recommendations</h2>
-                <p class="section-desc">Signature dishes curated by our head chef</p>
-            </div>
-            <div class="dish-grid" id="chef-dishes">
-                <div class="dish-card chef-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Chicken Karahi">
-                        <div class="dish-overlay">
-                            <span class="dish-tag chef-tag">Chef's Special</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Chicken Karahi</h3>
-                        <p>Traditional wok-cooked chicken with tomatoes, ginger, and aromatic spices</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">PKR 1,190</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card chef-card">
-                    <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80" alt="Grilled Sandwich">
-                        <div class="dish-overlay">
-                            <span class="dish-tag chef-tag">Chef's Special</span>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Grilled Sandwich</h3>
-                        <p>Toasted sourdough with grilled vegetables, melted cheddar, and pesto drizzle</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">PKR 590</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section desserts-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Sweet Indulgence</span>
-                <h2 class="section-title">Desserts & Drinks</h2>
-                <p class="section-desc">The perfect finish to your culinary journey</p>
-            </div>
-            <div class="dish-grid" id="desserts-drinks">
+            <div class="dish-grid">
                 <div class="dish-card">
                     <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" alt="Chocolate Lava Cake">
+                        <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?w=600&q=80" alt="Shawarma" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(145)</span></div>
+                        <h3>Shawarma</h3>
+                        <p>Spiced chicken wrapped in warm pita with garlic sauce & veggies</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 350</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80" alt="Hot Wings" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(92)</span></div>
+                        <h3>Hot Wings</h3>
+                        <p>Crispy chicken wings tossed in our signature spicy buffalo sauce</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 590</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Classic Zinger" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(124)</span></div>
+                        <h3>Classic Zinger</h3>
+                        <p>Double chicken fillet with cheese, jalapeños & tangy sauce</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 790</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80" alt="Fries Bucket" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(67)</span></div>
+                        <h3>Fries Bucket</h3>
+                        <p>Golden crispy fries seasoned with herbs & served with dip</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 390</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bbq" class="section bbq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-smoke"></i> BBQ Specials</span>
+                <h2 class="section-title">Grilled to Perfection</h2>
+                <p class="section-desc">Authentic BBQ flavors that transport you to the heart of Pakistan</p>
+            </div>
+            <div class="dish-grid">
+                <div class="dish-card chef-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Chicken Karahi" loading="lazy">
                         <div class="dish-overlay">
-                            <span class="dish-tag">Dessert</span>
+                            <span class="dish-tag chef-tag"><i class="fas fa-star"></i> Signature</span>
                         </div>
                     </div>
                     <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(186)</span></div>
+                        <h3>Chicken Karahi</h3>
+                        <p>Traditional wok-cooked chicken with tomatoes, ginger & aromatic spices</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 1,190</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card chef-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" alt="BBQ Platter" loading="lazy">
+                        <div class="dish-overlay">
+                            <span class="dish-tag chef-tag"><i class="fas fa-star"></i> Signature</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(203)</span></div>
+                        <h3>BBQ Platter</h3>
+                        <p>Mixed grill of seekh kebabs, chicken tikka & boti with naan & chutney</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 1,490</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card chef-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80" alt="Crispy Broast" loading="lazy">
+                        <div class="dish-overlay">
+                            <span class="dish-tag chef-tag"><i class="fas fa-star"></i> Signature</span>
+                        </div>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(98)</span></div>
+                        <h3>Crispy Broast</h3>
+                        <p>Juicy marinated chicken, double-breaded & fried to golden perfection</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 790</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="drinks-desserts" class="section desserts-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-ice-cream"></i> Drinks & Desserts</span>
+                <h2 class="section-title">Sweet & Refreshing</h2>
+                <p class="section-desc">The perfect finish to your meal — or a sweet treat anytime</p>
+            </div>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Mint Margarita" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(156)</span></div>
+                        <h3>Mint Margarita</h3>
+                        <p>Refreshing blend of fresh mint, lime & sparkling soda over crushed ice</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">PKR 390</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" alt="Chocolate Lava Cake" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="dish-info">
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(132)</span></div>
                         <h3>Chocolate Lava Cake</h3>
                         <p>Warm molten dark chocolate center served with vanilla bean ice cream</p>
                         <div class="dish-footer">
                             <span class="dish-price">PKR 590</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="dish-card">
                     <div class="dish-img">
-                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80" alt="Mint Margarita">
-                        <div class="dish-overlay">
-                            <span class="dish-tag">Drink</span>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Cold Coffee" loading="lazy">
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i></button>
                     </div>
                     <div class="dish-info">
-                        <h3>Mint Margarita</h3>
-                        <p>Refreshing blend of fresh mint, lime, and sparkling soda over crushed ice</p>
+                        <div class="dish-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(88)</span></div>
+                        <h3>Cold Coffee</h3>
+                        <p>Creamy iced coffee with a hint of vanilla and whipped cream</p>
                         <div class="dish-footer">
-                            <span class="dish-price">PKR 390</span>
-                            <button class="btn-order"><i class="fas fa-plus"></i> Order</button>
+                            <span class="dish-price">PKR 450</span>
+                            <button class="btn-order"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section ordering-section">
+        <div class="container">
+            <div class="ordering-wrapper">
+                <div class="ordering-content">
+                    <span class="section-tag"><i class="fas fa-mobile-screen-button"></i> Online Ordering</span>
+                    <h2 class="section-title ordering-title">Hungry? Order in Seconds</h2>
+                    <p>Skip the queue and get your favorites delivered straight to your doorstep. One tap is all it takes.</p>
+                    <div class="ordering-buttons">
+                        <a href="https://wa.me/923436847475" target="_blank" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                        <button class="btn btn-primary btn-lg" id="liveOrderBtn"><i class="fas fa-clock"></i> Live Order Tracking</button>
+                    </div>
+                    <div class="ordering-features">
+                        <div class="ord-feature"><i class="fas fa-check-circle"></i> No minimum order</div>
+                        <div class="ord-feature"><i class="fas fa-check-circle"></i> 30 min delivery</div>
+                        <div class="ord-feature"><i class="fas fa-check-circle"></i> Secure payment</div>
+                    </div>
+                </div>
+                <div class="ordering-image">
+                    <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=800&q=80" alt="Order food" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter" class="section counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <i class="fas fa-hamburger"></i>
+                    <span class="counter-number" data-target="50">0</span>
+                    <span class="counter-label">Dishes</span>
+                </div>
+                <div class="counter-item">
+                    <i class="fas fa-users"></i>
+                    <span class="counter-number" data-target="15000">0</span>
+                    <span class="counter-label">Happy Customers</span>
+                </div>
+                <div class="counter-item">
+                    <i class="fas fa-truck"></i>
+                    <span class="counter-number" data-target="30000">0</span>
+                    <span class="counter-label">Deliveries</span>
+                </div>
+                <div class="counter-item">
+                    <i class="fas fa-star"></i>
+                    <span class="counter-number" data-target="4.8" data-decimal="true">0</span>
+                    <span class="counter-label">Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-quote-left"></i> Customer Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-desc">Real reviews from real food lovers</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Zinger Burger is absolutely next level! Crispy, juicy, and packed with flavor. Best in town without a doubt."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">A</div>
+                        <div>
+                            <h4>Ahmed Khan</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Their BBQ Platter is a game-changer! Perfectly spiced, generous portions, and the delivery was lightning fast. Highly recommend!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <h4>Sara Ali</h4>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"I'm obsessed with their Chocolate Lava Cake! The perfect end to any meal. The family deals are incredible value too."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">R</div>
+                        <div>
+                            <h4>Rizwan Malik</h4>
+                            <span>Food Enthusiast</span>
                         </div>
                     </div>
                 </div>
@@ -280,86 +588,23 @@
     <section id="gallery" class="section gallery-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Visual Journey</span>
-                <h2 class="section-title">Our Gallery</h2>
-                <p class="section-desc">A glimpse into the world of ROSOI</p>
+                <span class="section-tag"><i class="fas fa-images"></i> Food Gallery</span>
+                <h2 class="section-title">A Feast for the Eyes</h2>
+                <p class="section-desc">Visual delights from our kitchen to your table</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant interior">
-                    <div class="gallery-overlay"><span>Elegant Dining</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Dining setup">
-                    <div class="gallery-overlay"><span>Fine Ambiance</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant interior">
-                    <div class="gallery-overlay"><span>Warm Atmosphere</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Restaurant">
-                    <div class="gallery-overlay"><span>Cozy Corner</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=600&q=80" alt="Restaurant interior">
-                    <div class="gallery-overlay"><span>Modern Design</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Cocktail">
-                    <div class="gallery-overlay"><span>Signature Drinks</span></div>
-                </div>
+            <div class="gallery-slider" id="gallerySlider">
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80" alt="Food" loading="lazy"></div>
+                <div class="gallery-slide"><img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=800&q=80" alt="Food" loading="lazy"></div>
             </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="section reviews-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Guest Voices</span>
-                <h2 class="section-title">Customer Reviews</h2>
-                <p class="section-desc">What our guests say about their experience</p>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">The finest dining experience in Skardu. The Chicken Karahi is absolutely divine — rich, aromatic, and perfectly spiced.</p>
-                    <div class="review-author">
-                        <div class="review-avatar">A</div>
-                        <div>
-                            <h4>Ahmed Khan</h4>
-                            <span>Regular Guest</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="review-text">Beautiful ambiance and impeccable service. The dessert selection is world-class — don't miss the Chocolate Lava Cake!</p>
-                    <div class="review-author">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4>Sara Ali</h4>
-                            <span>Food Critic</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="review-text">Exceptional value for money. The BBQ Platter deal is incredible — generous portions and authentic flavors.</p>
-                    <div class="review-author">
-                        <div class="review-avatar">R</div>
-                        <div>
-                            <h4>Rizwan Malik</h4>
-                            <span>Travel Enthusiast</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="gallery-controls">
+                <button class="gallery-btn" id="galleryPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-btn" id="galleryNext"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -367,9 +612,9 @@
     <section id="reservation" class="section reservation-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Book a Table</span>
-                <h2 class="section-title">Make a Reservation</h2>
-                <p class="section-desc">Reserve your table for an unforgettable evening</p>
+                <span class="section-tag"><i class="fas fa-calendar-alt"></i> Reserve a Table</span>
+                <h2 class="section-title">Book Your Experience</h2>
+                <p class="section-desc">Save your spot for an unforgettable dining experience</p>
             </div>
             <div class="reservation-wrapper">
                 <form class="reservation-form" id="reservation-form">
@@ -385,12 +630,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="res-date">Date</label>
-                            <input type="date" id="res-date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="res-time">Time</label>
-                            <input type="time" id="res-time" required>
+                            <label for="res-phone">Phone Number</label>
+                            <input type="tel" id="res-phone" placeholder="03XX XXXXXXX" required>
                         </div>
                         <div class="form-group">
                             <label for="res-guests">Guests</label>
@@ -405,6 +646,16 @@
                             </select>
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Date</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Time</label>
+                            <input type="time" id="res-time" required>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="res-message">Special Requests</label>
                         <textarea id="res-message" placeholder="Any dietary requirements or special occasion?" rows="3"></textarea>
@@ -416,17 +667,22 @@
                 <div class="reservation-info">
                     <div class="res-info-card">
                         <i class="fas fa-phone-alt"></i>
-                        <h4>Call Us</h4>
+                        <h4>Call to Book</h4>
                         <p><a href="tel:+923436847475">0343 6847475</a></p>
                     </div>
                     <div class="res-info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/923436847475" target="_blank">Chat with us</a></p>
+                    </div>
+                    <div class="res-info-card">
                         <i class="fas fa-map-marker-alt"></i>
-                        <h4>Visit Us</h4>
+                        <h4>Location</h4>
                         <p>Skardu, Pakistan</p>
                     </div>
                     <div class="res-info-card">
                         <i class="fas fa-clock"></i>
-                        <h4>Working Hours</h4>
+                        <h4>Hours</h4>
                         <p>Mon–Fri, 10:00 AM – 10:00 PM</p>
                     </div>
                 </div>
@@ -434,65 +690,16 @@
         </div>
     </section>
 
-    <section id="about" class="section about-section">
+    <section class="section live-order-section">
         <div class="container">
-            <div class="about-wrapper">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="About ROSOI">
-                </div>
-                <div class="about-content">
-                    <span class="section-tag">Our Story</span>
-                    <h2 class="section-title about-title">About ROSOI</h2>
-                    <p>ROSOI brings the rich culinary traditions of Skardu to your plate. Every dish is crafted with locally sourced ingredients and a passion for authentic flavors, blending timeless recipes with modern presentation.</p>
-                    <p>Our team of dedicated chefs works tirelessly to ensure every meal is a celebration of taste, culture, and hospitality. We believe in creating not just food, but memories that linger long after the last bite.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-target="15">0</span>
-                            <span class="stat-label">Years of Service</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="5000">0</span>
-                            <span class="stat-label">Happy Guests</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="50">0</span>
-                            <span class="stat-label">Signature Dishes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get in Touch</span>
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-desc">We'd love to hear from you</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p><a href="tel:+923436847475">0343 6847475</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Skardu, Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@rosoi.pk</p>
-                        </div>
+            <div class="live-order-wrapper">
+                <div class="live-order-content">
+                    <span class="live-badge"><i class="fas fa-circle" style="color: #4caf50;"></i> Live</span>
+                    <h2>Ready to Order?</h2>
+                    <p>Your cravings are just a click away. Order now and enjoy premium taste delivered to your doorstep.</p>
+                    <div class="live-buttons">
+                        <a href="https://wa.me/923436847475" target="_blank" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                        <a href="tel:+923436847475" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Call to Order</a>
                     </div>
                 </div>
             </div>
@@ -503,17 +710,34 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <h2>ROSOI</h2>
-                    <p>Exquisite dining in the heart of Skardu. Where tradition meets elegance.</p>
+                    <h2>RASOIE</h2>
+                    <p class="footer-slogan">Serving Happiness in Every Bite</p>
+                    <p>Premium dining in the heart of Skardu. Bold flavors, premium taste — since 2011.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+923436847475">0343 6847475</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/923436847475" target="_blank">WhatsApp</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Skardu, Pakistan</p>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#best-sellers">Best Sellers</a></li>
+                        <li><a href="#deals">Special Deals</a></li>
+                        <li><a href="#fast-food">Fast Food</a></li>
+                        <li><a href="#bbq">BBQ Specials</a></li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#reservation">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#reservation">Reserve a Table</a></li>
+                        <li><a href="https://wa.me/923436847475" target="_blank">WhatsApp Order</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Feedback</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -523,15 +747,28 @@
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="footer-owner">
+                        <p>Owned by <strong>Zafar</strong></p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ROSOI &middot; Skardu, Pakistan. All rights reserved.</p>
+                <p>&copy; 2026 <strong>RASOIE</strong> &middot; Skardu, Pakistan. All rights reserved. &middot; <span class="footer-slogan">Serving Happiness in Every Bite</span></p>
             </div>
         </div>
     </footer>
+
+    <div class="whatsapp-float" id="whatsappFloat">
+        <a href="https://wa.me/923436847475" target="_blank" aria-label="Order on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="cart-toast" id="cartToast">
+        <i class="fas fa-check-circle"></i> Added to cart!
+    </div>
 
     <script src="script.js"></script>
 </body>

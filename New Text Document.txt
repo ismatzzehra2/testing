@@ -1,43 +1,84 @@
-Redesign the entire restaurant website with a modern luxury aesthetic. Change the current theme into a warm and elegant style using dark backgrounds, soft golden accents, smooth animations, glassmorphism effects, and premium typography. Make the homepage visually attractive, responsive, and professional on both mobile and desktop.
+Create a modern premium restaurant website inspired by the style and vibe of Cheezious, but with a unique and more luxurious aesthetic for “RASOIE Restaurant”. The website should feel bold, energetic, modern, food-focused, and visually attractive with high-quality food visuals, glowing UI elements, and smooth animations.
 
-Add high-quality food images for every dish section with stylish hover effects and clean card layouts. Create separate sections for:
+Use a dark luxury theme with:
 
-* Popular Dishes
-* Special Deals
-* Chef’s Recommendations
-* Desserts
-* Drinks
+* Matte Black background
+* Red and Orange gradient highlights
+* Soft Gold accents
+* Clean White typography
+* Warm cinematic lighting effects
 
-Add these dishes with beautiful pictures, prices, and short descriptions:
+Design a stunning full-screen homepage with:
 
-* Chicken Biryani
+* Large juicy food banners
+* Animated hero section
+* Floating glowing buttons
+* Smooth scrolling effects
+* Modern transparent navbar
+* Eye-catching food cards
+* Hover zoom animations on dishes
+* Professional mobile-friendly layout
+
+Add a powerful slogan like:
+“Serving Happiness in Every Bite”
+or
+“Bold Flavors. Premium Taste.”
+
+Add high-quality realistic food pictures for:
+
 * Zinger Burger
-* Alfredo Pasta
-* Chicken Karahi
+* Chicken Biryani
+* Loaded Pizza
+* Crispy Broast
 * BBQ Platter
-* Pizza Supreme
-* Grilled Sandwich
-* Crispy Fries
-* Chocolate Lava Cake
+* Chicken Karahi
+* Alfredo Pasta
+* Fries Bucket
+* Shawarma
+* Hot Wings
 * Mint Margarita
+* Chocolate Lava Cake
 
-Improve the website UI by:
+Create modern sections like:
 
-* Adding smooth scrolling animations
-* Modern navbar with transparent effect
-* Attractive hero section with restaurant background image
-* Stylish buttons with hover glow
-* Elegant menu cards with shadows
+* Best Sellers
+* Special Deals
+* Family Meals
+* Fast Food Collection
+* BBQ Specials
+* Drinks & Desserts
+* Customer Reviews
+* Online Ordering
+* Reserve a Table
+* Food Gallery
+
+Make dish cards similar to premium fast-food brands with:
+
+* Large food images
+* Smooth hover glow
+* Price tags
+* Add-to-cart buttons
+* Rating stars
+* Short catchy descriptions
+
+Add:
+
+* Delivery section
+* Live order button
+* WhatsApp order option
+* Animated counters
+* Food gallery slider
 * Modern footer with social media icons
-* Customer reviews/testimonials section
-* Online reservation section
-* Gallery section with aesthetic food images
 
-Use a premium color palette like:
+The website should feel:
 
-* Black / Dark Charcoal
-* Gold
-* Cream White
-* Warm Orange highlights
+* Modern
+* Premium
+* Fast-food luxury style
+* Aesthetic
+* Bold
+* Attractive
+* Youth-focused
+* Highly engaging
 
-Make the whole website look luxurious, aesthetic, minimal, and visually engaging like a high-end restaurant brand. Add more spacing, modern fonts, and clean layouts to improve the overall user experience.
+Use cinematic food photography, modern UI/UX, glowing effects, premium animations, and trendy layouts to make the website look similar to Cheezious but more elegant, aesthetic, and unique.
