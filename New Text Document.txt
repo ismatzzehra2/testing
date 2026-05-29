@@ -6,14 +6,14 @@ restaurant located in Skardu, Pakistan.
   RESTAURANT IDENTITY & OWNERSHIP
 ═══════════════════════════════════════════════════════
 
-Restaurant Name     : Rasioe
+Restaurant Name     : Rasioe (راسیوے)
 Owner               : Zaffar Abbas
 Business Partner    : Ali
 Type                : Premium Fine Dining & Family Restaurant
 Location            : Alamdar Chowk, Skardu, Gilgit-Baltistan, Pakistan
-Contact             : 03499740602
+Contact             : +92 349 9740602
 Email               : zafarabbas1@gmail.com
-Social Media        : zafarbayya/ zafarabbas/ WhatsApp]
+Social Media        : @zafarbayya (Instagram) · Zafarabbas (Facebook) · +923499740602 (WhatsApp)
 Opening Hours       : Tuesday – Sunday | 12:00 PM – 11:00 PM
 Established         : 2024
 
@@ -21,28 +21,156 @@ Established         : 2024
   OWNER PROFILE — ZAFFAR ABBAS
 ═══════════════════════════════════════════════════════
 
-The owner photo has been provided. Use it in the About Us page
-inside the owner profile card. Instructions for usage:
-
   File Name   : WhatsApp_Image_2026-04-08_at_7_52_05_PM.jpeg
-  Usage       : Place as owner profile photo for Zaffar Abbas
+  Usage       : Owner profile photo for Zaffar Abbas
   Frame Style : Square crop, object-fit: cover, object-position: center top
   Border      : 0.5px gold outer border (#c9a84c) with double-frame effect
-  Size        : 130x130px on desktop, 110x110px on mobile
+  Size        : 130x130px desktop, 110x110px mobile
   Alt Text    : "Zaffar Abbas — Founder & Owner, Rasioe Restaurant"
-  Badge       : Gold filled label reading "Restaurant Owner" above the photo
+  Badge       : Gold filled label "Restaurant Owner" above photo
   Quote       : "Rasioe was born from a lifelong passion for authentic
                  flavours and the warmth of genuine hospitality.
                  Every dish we serve carries a piece of our soul."
                  — Zaffar Abbas
+  Placement   : Hero welcome section + About Us card + Footer signature
 
 Partner Card (Ali):
-  - Use initials avatar "A" until real photo is provided
-  - Same card layout as owner card
+  - Initials avatar "A" until real photo provided
+  - Same card layout as owner
   - Badge: ghost style "Business Partner"
   - Quote: "A visionary partner who brought excellence and precision
              to Rasioe — turning a shared dream into Skardu's finest
              dining destination."
+
+═══════════════════════════════════════════════════════
+  VIDEO & ANIMATION GUIDELINES
+═══════════════════════════════════════════════════════
+
+STRICTLY REMOVE / NEVER USE:
+  ✗ Ocean scenes
+  ✗ Water flowing or waves
+  ✗ Rivers, lakes, or any water body
+  ✗ Nature landscape or mountain stream videos
+  ✗ Generic travel or tourism footage
+  ✗ Any non-food-related background videos
+
+════════════════════════════════
+  REQUIRED: FOOD AESTHETIC VIDEOS
+════════════════════════════════
+
+All videos must feel cinematic, warm, slow, and luxurious.
+Dark moody lighting. Golden tones. Shallow depth of field.
+Slow motion preferred. No fast cuts. No loud transitions.
+
+  VIDEO 1 — HERO BACKGROUND (Home Page)
+  ───────────────────────────────────────
+  Type        : Looping background video, autoplay, muted
+  Content     : Slow cinematic close-up of premium food being
+                plated — a chef's hands elegantly placing garnish
+                on a dark ceramic plate under warm golden light
+  Mood        : Dark, moody, editorial — like a luxury food magazine
+  Overlay     : Semi-transparent black overlay (#000, 55% opacity)
+                so the restaurant name reads clearly on top
+  Format      : MP4, compressed for fast load
+  Fallback    : Dark food photography poster image
+  Source note : Use a royalty-free food video from:
+                Pexels.com → search "food plating cinematic"
+                Pixabay.com → search "restaurant food dark"
+                Coverr.co → search "food aesthetic"
+
+  VIDEO 2 — ABOUT US SECTION
+  ────────────────────────────
+  Type        : Embedded autoplay, muted, looped section video
+  Content     : Slow-motion aesthetic food preparation scenes:
+                · Steam rising gently from a bowl of soup
+                · Golden saffron threads dropping into warm broth
+                · A perfectly seared piece of meat resting on slate
+                · Spices being ground in a stone mortar
+                · Bread being freshly pulled from a clay oven
+  Mood        : Warm, intimate, artisan — celebrating the craft
+                of cooking and the beauty of ingredients
+  Placement   : Full-width section between owner bio and team cards
+  Overlay     : Light black gradient at top and bottom edges only
+  Format      : MP4, lazy-loaded
+  Source note : Pexels.com → "cooking slow motion aesthetic"
+                Coverr.co → "kitchen food cinematic"
+
+  VIDEO 3 — MENU PAGE HEADER
+  ────────────────────────────
+  Type        : Short looping video banner at top of menu page
+  Content     : Extreme close-up food beauty shots in sequence:
+                · Honey drizzling slowly over warm bread
+                · Fresh herbs being scattered over a dark plate
+                · A dessert being dusted with fine gold powder
+                · Ice slowly melting in a crystal glass of drink
+  Mood        : Sensory, appetite-inducing, luxurious
+  Height      : 320px, full width
+  Overlay     : Dark gradient fading into the black page background
+  Format      : MP4, autoplay, muted, loop
+  Source note : Pexels.com → "food close up slow motion"
+
+  VIDEO 4 — GALLERY SECTION
+  ──────────────────────────
+  Type        : Embedded featured video in gallery tab
+  Content     : A cinematic 60–90 second food story video:
+                · Opening shot: empty dark table, single candle lit
+                · Hands arranging cutlery and a gold-rimmed plate
+                · Chef carefully plating a signature Rasioe dish
+                · Steam rising, sauce being poured in slow motion
+                · Final shot: the complete dish, beautifully lit
+  Mood        : Storytelling, emotional, haute cuisine documentary
+  Placement   : Featured tile in the gallery grid (spans 2 columns)
+  Controls    : User-clickable play/pause (not autoplay)
+  Format      : MP4 or YouTube embed
+  Source note : Pexels.com → "restaurant chef plating cinematic"
+                Or embed a curated YouTube food film
+
+  VIDEO 5 — RESERVATIONS PAGE BACKGROUND
+  ────────────────────────────────────────
+  Type        : Subtle looping background video behind booking form
+  Content     : Extreme slow motion — a single candle flame flickering
+                beside a gold-rimmed empty plate on a black table,
+                folded linen napkin, a wine glass catching warm light
+  Mood        : Intimate, romantic, anticipatory — setting the scene
+                for a special evening at Rasioe
+  Overlay     : Heavy dark overlay (70% black) — form must be fully
+                readable on top
+  Format      : MP4, autoplay, muted, loop
+  Source note : Pexels.com → "candlelight dining table dark"
+                Coverr.co → "restaurant table candle"
+
+════════════════════════════════
+  CSS ANIMATION RULES (No Video)
+════════════════════════════════
+
+  For sections where video is not used, implement CSS animations:
+
+  · Dish cards on Menu page:
+    - On page load: fade-in + slide-up (staggered, 0.1s delay each)
+    - On hover: subtle scale(1.02) + gold border glow
+
+  · Hero restaurant name:
+    - Letter-by-letter fade-in on page load using GSAP or CSS
+    - Underline drawn left-to-right in gold on load
+
+  · Section reveals:
+    - All sections animate in on scroll using IntersectionObserver
+    - Entrance: opacity 0 → 1, translateY(30px) → 0, 0.6s ease
+
+  · Gold divider lines:
+    - Animate width from 0 to full on scroll entry (0.8s ease)
+
+  · Owner & partner photo frames:
+    - Gold border traces around frame on page load (CSS stroke animation)
+
+  · Stats counter section:
+    - Numbers count up from 0 to final value when scrolled into view
+
+  · Menu category tabs:
+    - Underline slides smoothly between active tabs
+
+  · WhatsApp floating button:
+    - Gentle pulse animation every 3 seconds to draw attention
 
 ═══════════════════════════════════════════════════════
   BRAND & VISUAL IDENTITY
@@ -70,7 +198,6 @@ Design Rules:
     ornaments, corner bracket frames, Art Deco geometric patterns
   - Micro-animations on all hover states (0.3s ease)
   - Smooth scroll across all sections
-  - No generic UI — every pixel must feel premium and intentional
 
 ═══════════════════════════════════════════════════════
   WEBSITE PAGES & SECTIONS
@@ -78,10 +205,9 @@ Design Rules:
 
 1. HOME PAGE
    ─────────
-   - Full-screen animated hero with restaurant name in English + Urdu
+   - Full-screen food cinematic video hero (VIDEO 1 above)
+   - Restaurant name in English + Urdu animated on load
    - Tagline: "Where Every Dish Tells a Story"
-     Urdu: "جہاں ہر ڈش ایک کہانی سناتی ہے"
-   - Cinematic background video loop — exterior view of restaurant
    - Sticky navigation bar with logo, links, "Reserve a Table" CTA
    - Welcome message from Owner Zaffar Abbas with his photo
    - Featured dishes section (3–4 hero dishes with photos)
@@ -89,27 +215,22 @@ Design Rules:
    - Customer testimonials / Google review-style cards
    - Instagram feed section
    - Newsletter subscription bar
-   - WhatsApp floating chat button
+   - WhatsApp floating chat button (pulse animation)
 
 2. ABOUT US
    ────────
    - Story of Rasioe — origin, vision, culinary philosophy
-   - Owner profile card: Zaffar Abbas
-       · Use provided photo (WhatsApp_Image_2026-04-08_at_7_52_05_PM.jpeg)
-       · Gold double-frame border
-       · Title: Founder & Owner
-       · Personal quote displayed below name
-   - Partner card: Ali
-       · Initials avatar until photo provided
-       · Title: Co-Founder & Business Partner
-   - Chef & team introduction section
+   - Owner profile card: Zaffar Abbas (provided photo)
+   - Partner card: Ali (initials placeholder)
+   - Food aesthetic cinematic video (VIDEO 2 above)
+   - Chef & team introduction
    - Core values: Quality · Authenticity · Hospitality · Heritage
    - Restaurant milestone timeline
    - Interior & exterior photo gallery with lightbox
-   - Animated cinematic video — inside restaurant walkthrough
 
 3. MENU PAGE
    ─────────
+   - Food beauty shot video banner at top (VIDEO 3 above)
    Total Dishes: 60 | All names in English AND Urdu
 
    Categories:
@@ -125,22 +246,22 @@ Design Rules:
      · 10 Special Family & Friends Deals / خاص فیملی ڈیلز
 
    Each dish card:
-     · High-quality dish photo (placeholder until real images uploaded)
+     · High-quality dish photo
      · Name in English + Urdu
      · Description in English + Urdu
      · Price in PKR
      · Spice level indicator
      · Tags: Veg / Non-Veg / Spicy / Chef's Recommended
      · "WhatsApp Order" button
+     · Staggered fade-in animation on load
 
    Special Deals Section:
-     · 10 dedicated deal cards — highlighted separately
-     · Each: name, items included, serving size, original vs deal price
+     · 10 dedicated deal cards
      · "BEST VALUE" badge on top deals
      · Family Deal / Couple Deal / Friends Platter labels
 
    Menu Features:
-     · Category filter tabs
+     · Category filter tabs (sliding underline animation)
      · Dish search bar
      · Printable PDF menu download
      · "Today's Special" rotating badge
@@ -150,16 +271,16 @@ Design Rules:
    - Masonry photo grid: food, interior, exterior, events, team
    - Tabs: Food · Ambiance · Events · Behind the Scenes
    - Full-screen lightbox on click
-   - Cinematic video section (inside + outside restaurant)
-   - Upload-ready structure for real owner photos
+   - Featured cinematic food story video (VIDEO 4 above)
+   - Upload-ready for real owner photos
 
 5. RESERVATIONS
    ─────────────
+   - Candlelight dining video background (VIDEO 5 above)
    - Booking form: Name · Phone · Email · Date · Time · Guests
-   - Special requests field (birthday, anniversary, dietary)
+   - Special requests field
    - WhatsApp booking as alternative
    - Confirmation message on submission
-   - Reservation policy note
 
 6. EVENTS & OFFERS
    ────────────────
@@ -193,53 +314,51 @@ Design Rules:
 ═══════════════════════════════════════════════════════
 
 Photos:
-  - Owner photo: PROVIDED (use as instructed above)
+  - Owner photo: PROVIDED (Zaffar Abbas)
   - Every dish: dedicated high-resolution photograph
-  - Restaurant interior: dining area, lighting, decor, tables
-  - Restaurant exterior: entrance, signage, facade
-  - Partner Ali: placeholder initials until photo provided
+  - Partner Ali: initials placeholder until photo provided
   - All images: WebP format, lazy-loaded, with alt text
-  - Placeholder source: Unsplash food photography
+  - Placeholder source: Pexels.com food photography
 
 Videos:
-  - Hero: cinematic exterior — autoplay, muted, looped, MP4
-  - About: interior walkthrough — warm ambiance, kitchen
-  - Fallback poster image if video fails to load
+  - ALL videos must be food-related and aesthetic (see above)
+  - NO water, ocean, nature, or landscape videos — ever
+  - Format: MP4, compressed, lazy-loaded
+  - Free sources: Pexels.com · Coverr.co · Pixabay.com
+  - Fallback poster image required for every video
 
 Urdu Content:
-  - All menu names bilingual: English + Urdu side by side
+  - All menu names bilingual: English + Urdu
   - Font: Noto Nastaliq Urdu (Google Fonts)
-  - Urdu direction: RTL
-  - Language toggle button: EN | اردو
+  - Direction: RTL
+  - Language toggle: EN | اردو
 
 ═══════════════════════════════════════════════════════
   TECHNICAL REQUIREMENTS
 ═══════════════════════════════════════════════════════
 
 Stack         : HTML5, CSS3 (custom properties), Vanilla JavaScript
-Structure     : /pages /components /assets /css /js
+Structure     : /pages /components /assets /css /js /videos
 Performance   : PageSpeed 90+, lazy load all media, WebP images
-SEO           : Meta tags, Open Graph, Schema markup (Restaurant,
-                Menu, LocalBusiness), sitemap.xml, robots.txt
+Animations    : GSAP for hero text + scroll reveals,
+                IntersectionObserver for section entrances,
+                CSS transitions for hover and tab effects
+SEO           : Meta tags, Open Graph, Schema markup, sitemap.xml
 Keywords      : "Rasioe Skardu", "best restaurant Skardu",
                 "fine dining Skardu", "Alamdar Chowk restaurant"
-Responsive    : Mobile-first, touch-friendly navigation
+Responsive    : Mobile-first, touch-friendly
 Accessibility : ARIA labels, alt text, keyboard navigable
-Animations    : GSAP or CSS scroll reveals, parallax hero,
-                staggered menu card entrances
 
 ═══════════════════════════════════════════════════════
   DEVELOPER INSTRUCTIONS
 ═══════════════════════════════════════════════════════
 
-- Always maintain black and gold luxury theme — no exceptions
-- Every component must match the Rasioe brand identity
-- Owner photo (Zaffar Abbas) must appear on: Hero welcome
-  section, About Us owner card, and Footer signature
-- When I upload new photos (dishes, interior, Ali), replace
-  placeholders immediately in the correct sections
+- Black and gold luxury theme — absolutely no exceptions
+- Every video must be food-related, cinematic, and aesthetic
+- Zero water, ocean, or nature videos anywhere on the site
+- Owner photo (Zaffar Abbas) appears on: Hero, About Us, Footer
+- When new photos are uploaded, replace placeholders immediately
 - Comment all code clearly in English
-- If any design decision risks breaking the luxury aesthetic,
-  flag it and suggest a better approach before proceeding
-- You are not just a coder — you are a co-creator of the
-  Rasioe brand experience. Suggest improvements proactively.
+- Flag any decision that risks breaking the luxury aesthetic
+- You are a co-creator of the Rasioe brand — suggest improvements
+  proactively at every step

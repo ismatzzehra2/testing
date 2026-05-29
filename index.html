@@ -53,6 +53,9 @@
 
 <!-- ═══ Opening Animation ═══ -->
 <div id="splash" class="splash" aria-hidden="true">
+  <div class="splash-tadka"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="splash-cloche"></div>
+  <div class="splash-drizzle"><span></span><span></span><span></span></div>
   <div class="splash-inner">
     <div class="splash-line"></div>
     <div class="splash-diamond">&#9670;</div>
@@ -89,14 +92,15 @@
 
 <!-- ═══ Hero ═══ -->
 <section id="home" class="hero" aria-label="Welcome to Rasioe">
-  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80" aria-hidden="true">
-    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
+  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80" aria-hidden="true">
+    <source src="https://cdn.coverr.co/videos/coverr-cooking-shakshuka-2881/1080p.mp4" type="video/mp4">
   </video>
   <div class="hero-video-fallback"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">Est. 2024 · Alamdar Chowk, Skardu</div>
-    <h1 class="hero-title">RASIOE<br><span class="gold">Fine Dining</span></h1>
+    <h1 class="hero-title" id="heroTitle">RASIOE<br><span class="gold">Fine Dining</span></h1>
+    <div class="hero-underline"></div>
     <p class="hero-tagline">"Where Every Dish Tells a Story"</p>
     <div class="divider-row">
       <span class="gold-line gold-line--long"></span>
@@ -104,7 +108,7 @@
       <span class="gold-line gold-line--long"></span>
     </div>
     <div class="hero-welcome">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=130&q=80" alt="Zaffar Abbas — Founder &amp; Owner, Rasioe Restaurant" class="hero-owner-img" loading="lazy">
+      <img src="images/owner.jpg" alt="Zaffar Abbas — Founder &amp; Owner, Rasioe Restaurant" class="hero-owner-img" loading="lazy">
       <div class="hero-welcome-text">
         <span class="hero-welcome-label">A Message from Our Founder</span>
         <p>"Rasioe was born from a lifelong passion for authentic flavours and the warmth of genuine hospitality. Every dish we serve carries a piece of our soul." <strong>— Zaffar Abbas</strong></p>
@@ -181,8 +185,8 @@
     </div>
     <div class="about-grid">
       <div class="about-media">
-        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" style="width:100%;height:520px;object-fit:cover;">
-          <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80" style="width:100%;height:520px;object-fit:cover;">
+          <source src="https://cdn.coverr.co/videos/coverr-pad-thai-134/1080p.mp4" type="video/mp4">
         </video>
         <div class="about-media-border"></div>
       </div>
@@ -192,7 +196,7 @@
         <div class="owner-cards">
           <div class="owner-card owner-card--primary">
             <span class="owner-badge">Restaurant Owner</span>
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Zaffar Abbas — Founder &amp; Owner, Rasioe Restaurant" class="owner-avatar" loading="lazy">
+            <img src="images/owner.jpg" alt="Zaffar Abbas — Founder &amp; Owner, Rasioe Restaurant" class="owner-avatar" loading="lazy">
             <div class="owner-card-frame"></div>
             <div>
               <h4>Zaffar Abbas</h4>
@@ -259,21 +263,30 @@
       <p class="section-desc">60 dishes crafted with passion — explore by category</p>
       <div class="divider-row"><span class="gold-line"></span><span class="diamond"></span><span class="gold-line"></span></div>
     </div>
+    <div class="menu-banner-video" aria-hidden="true">
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80">
+        <source src="https://cdn.coverr.co/videos/coverr-homemade-pizza-2472/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="menu-banner-overlay"></div>
+    </div>
     <div class="menu-controls">
       <input type="text" class="menu-search" id="menuSearch" placeholder="Search any dish..." aria-label="Search menu">
       <a href="#" class="btn btn--ghost btn--sm" id="pdfDownload" aria-label="Download PDF menu"><i class="fas fa-download"></i> PDF Menu</a>
     </div>
-    <div class="menu-tabs" id="menuTabs" role="tablist">
-      <button class="menu-tab active" role="tab" aria-selected="true" data-category="appetizers">Appetizers</button>
-      <button class="menu-tab" role="tab" data-category="bbq">BBQ &amp; Grill</button>
-      <button class="menu-tab" role="tab" data-category="pakistani">Pakistani Classics</button>
-      <button class="menu-tab" role="tab" data-category="continental">Continental</button>
-      <button class="menu-tab" role="tab" data-category="rice">Rice &amp; Biryani</button>
-      <button class="menu-tab" role="tab" data-category="breads">Breads &amp; Sides</button>
-      <button class="menu-tab" role="tab" data-category="soups">Soups</button>
-      <button class="menu-tab" role="tab" data-category="desserts">Desserts</button>
-      <button class="menu-tab" role="tab" data-category="beverages">Beverages</button>
-      <button class="menu-tab" role="tab" data-category="deals">Family Deals</button>
+    <div class="menu-tabs-wrap">
+      <div class="menu-tabs" id="menuTabs" role="tablist">
+        <button class="menu-tab active" role="tab" aria-selected="true" data-category="appetizers">Appetizers</button>
+        <button class="menu-tab" role="tab" data-category="bbq">BBQ &amp; Grill</button>
+        <button class="menu-tab" role="tab" data-category="pakistani">Pakistani Classics</button>
+        <button class="menu-tab" role="tab" data-category="continental">Continental</button>
+        <button class="menu-tab" role="tab" data-category="rice">Rice &amp; Biryani</button>
+        <button class="menu-tab" role="tab" data-category="breads">Breads &amp; Sides</button>
+        <button class="menu-tab" role="tab" data-category="soups">Soups</button>
+        <button class="menu-tab" role="tab" data-category="desserts">Desserts</button>
+        <button class="menu-tab" role="tab" data-category="beverages">Beverages</button>
+        <button class="menu-tab" role="tab" data-category="deals">Family Deals</button>
+      </div>
+      <span class="menu-tab-indicator" id="tabIndicator"></span>
     </div>
 
     <div class="menu-categories">
@@ -410,6 +423,13 @@
     <div class="gallery-categories">
       <div class="gallery-category active" id="gallery-food">
         <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item gallery-item--video" style="grid-column:span 2">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" style="width:100%;height:100%;object-fit:cover;">
+              <source src="https://cdn.coverr.co/videos/coverr-grilling-meat-on-skewers-2903/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="gallery-item-overlay"><i class="fas fa-play"></i></div>
+            <span class="gallery-item-label">The Rasioe Experience</span>
+          </div>
           <div class="gallery-item"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger" loading="lazy"><div class="gallery-item-overlay"><i class="fas fa-expand"></i></div><span class="gallery-item-label">Zinger Burger</span></div>
           <div class="gallery-item"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Biryani" loading="lazy"><div class="gallery-item-overlay"><i class="fas fa-expand"></i></div><span class="gallery-item-label">Chicken Biryani</span></div>
           <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Loaded Pizza" loading="lazy"><div class="gallery-item-overlay"><i class="fas fa-expand"></i></div><span class="gallery-item-label">Loaded Pizza</span></div>
@@ -445,8 +465,8 @@
 <!-- ═══ Video Showcase ═══ -->
 <div class="video-showcase">
   <div class="container">
-    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80" aria-label="Rasioe restaurant ambiance video">
-      <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80" aria-label="Rasioe restaurant ambiance video">
+      <source src="https://cdn.pixabay.com/video/2017/08/29/11620-231571928_large.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -589,6 +609,12 @@
 
 <!-- ═══ Reservations ═══ -->
 <section id="reservations" class="section reservations-section" aria-label="Reservations">
+  <div class="reservations-bg-video" aria-hidden="true">
+    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200&q=80">
+      <source src="https://cdn.coverr.co/videos/coverr-avocado-and-egg-on-toast-93/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="reservations-bg-overlay"></div>
+  </div>
   <div class="container">
     <div class="section-header">
       <span class="section-label">Book Your Experience</span>
@@ -724,7 +750,7 @@
         <span class="footer-logo">RASIOE<small>راسیوے</small></span>
         <p class="tagline">"Where Every Dish Tells a Story"</p>
         <div class="footer-owner-signature">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Zaffar Abbas" class="footer-owner-img" loading="lazy">
+          <img src="images/owner.jpg" alt="Zaffar Abbas" class="footer-owner-img" loading="lazy">
           <div>
             <p style="font-size:0.85rem;color:var(--text-muted)"><strong style="color:var(--gold)">Zaffar Abbas</strong> — Founder &amp; Owner</p>
             <p style="font-size:0.8rem;color:var(--text-dim);font-style:italic">"Every dish we serve carries a piece of our soul."</p>

@@ -19,6 +19,42 @@
     var lightboxImages = [];
     var lightboxIndex = 0;
 
+    /* ─── Hero title letter-by-letter split ─── */
+    (function () {
+        var title = document.getElementById('heroTitle');
+        if (!title) return;
+        var idx = 0;
+        function splitText(text) {
+            var frag = document.createDocumentFragment();
+            for (var i = 0; i < text.length; i++) {
+                var ch = text[i];
+                var span = document.createElement('span');
+                span.className = 'char' + (ch === ' ' ? ' space' : '');
+                span.textContent = ch === ' ' ? '\u00A0' : ch;
+                span.style.animationDelay = (0.6 + idx * 0.05) + 's';
+                frag.appendChild(span);
+                idx++;
+            }
+            return frag;
+        }
+        var children = Array.from(title.childNodes);
+        title.textContent = '';
+        for (var i = 0; i < children.length; i++) {
+            var node = children[i];
+            if (node.nodeType === 3) {
+                title.appendChild(splitText(node.textContent));
+            } else if (node.nodeName === 'BR') {
+                title.appendChild(document.createElement('br'));
+            } else if (node.nodeType === 1) {
+                var clone = node.cloneNode(false);
+                clone.textContent = '';
+                var startIdx = idx;
+                clone.appendChild(splitText(node.textContent));
+                title.appendChild(clone);
+            }
+        }
+    })();
+
     /* ─── Navbar scroll ─── */
     function handleScroll() {
         var y = window.scrollY;
@@ -89,12 +125,28 @@
                 contents.forEach(function (c) { c.classList.remove('active'); });
                 var target = document.getElementById(contentClass.replace('category','') + cat);
                 if (target) { target.classList.add('active'); }
+                /* update tab indicator for menu tabs */
+                if (containerId === 'menuTabs') {
+                    updateTabIndicator(this);
+                }
             });
         });
     }
 
+    /* ─── Tab indicator ─── */
+    function updateTabIndicator(activeTab) {
+        var indicator = document.getElementById('tabIndicator');
+        if (!indicator || !activeTab) return;
+        indicator.style.left = activeTab.offsetLeft + 'px';
+        indicator.style.width = activeTab.offsetWidth + 'px';
+    }
     initTabs('menuTabs', 'menu-tab', 'menu-category', 'data-category');
     initTabs('galleryTabs', 'gallery-tab', 'gallery-category', 'data-category');
+    /* init tab indicator on load */
+    (function () {
+        var activeTab = document.querySelector('.menu-tab.active');
+        if (activeTab) updateTabIndicator(activeTab);
+    })();
 
     /* ─── Menu Search ─── */
     var menuSearch = document.getElementById('menuSearch');
@@ -321,6 +373,10 @@
             '.owner-card, .chef-card, .tourist-step, .event-form, .footer-owner-signature'
         );
         els.forEach(function (el) { el.classList.add('reveal'); });
+        /* divider row reveal */
+        var dividers = document.querySelectorAll('.divider-row');
+        /* owner card frame trace */
+        var frames = document.querySelectorAll('.owner-card-frame');
         if (typeof IntersectionObserver !== 'undefined') {
             var obs = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
@@ -331,6 +387,26 @@
                 });
             }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
             els.forEach(function (el) { obs.observe(el); });
+            /* divider rows */
+            dividers.forEach(function (d) {
+                obs.observe(d);
+            });
+            /* owner frames */
+            frames.forEach(function (f) {
+                obs.observe(f);
+            });
+        }
+        /* divider row class addition via separate observer */
+        if (typeof IntersectionObserver !== 'undefined') {
+            var divObs = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        divObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            dividers.forEach(function (d) { divObs.observe(d); });
         }
     })();
 
