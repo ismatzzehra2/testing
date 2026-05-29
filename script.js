@@ -187,7 +187,7 @@
             setTimeout(function () {
                 var msg = 'Hello! I would like to confirm my reservation for ' + name +
                     ', ' + guests + ' guest(s) on ' + date + ' at ' + time + '.';
-                var waUrl = 'https://wa.me/923436847475?text=' + encodeURIComponent(msg);
+                var waUrl = 'https://wa.me/923499740602?text=' + encodeURIComponent(msg);
                 if (confirm('Reservation received for ' + name + '.\n\nConfirm via WhatsApp?')) {
                     window.open(waUrl, '_blank');
                 }
@@ -208,12 +208,45 @@
             var subject = document.getElementById('contactSubject').value.trim();
             var message = document.getElementById('contactMessage').value.trim();
             if (!name || !subject || !message) { showToast('Please fill in all fields.'); return; }
-            var waUrl = 'https://wa.me/923436847475?text=' + encodeURIComponent('Name: ' + name + '\nSubject: ' + subject + '\nMessage: ' + message);
+            var waUrl = 'https://wa.me/923499740602?text=' + encodeURIComponent('Name: ' + name + '\nSubject: ' + subject + '\nMessage: ' + message);
             window.open(waUrl, '_blank');
             showToast('Message sent. We will respond shortly.');
             contactForm.reset();
         });
     }
+
+    /* ─── Event Enquiry Form ─── */
+    var eventForm = document.getElementById('eventForm');
+    if (eventForm) {
+        eventForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('eventName').value.trim();
+            var phone = document.getElementById('eventPhone').value.trim();
+            var type = document.getElementById('eventType').value;
+            var guests = document.getElementById('eventGuests').value;
+            var msg = document.getElementById('eventMessage').value.trim();
+            if (!name || !phone || !type || !guests || !msg) { showToast('Please fill in all fields.'); return; }
+            var waMsg = 'Event Enquiry - Name: ' + name + ', Phone: ' + phone + ', Type: ' + type + ', Guests: ' + guests + ', Details: ' + msg;
+            window.open('https://wa.me/923499740602?text=' + encodeURIComponent(waMsg), '_blank');
+            showToast('Enquiry sent. We will contact you shortly.');
+            eventForm.reset();
+        });
+    }
+
+    /* ─── Today's Special Badge ─── */
+    (function () {
+        var items = document.querySelectorAll('.menu-item');
+        var today = new Date().getDay();
+        var indices = [2, 5, 1, 4, 0, 3, 2];
+        var idx = indices[today] || 0;
+        if (items.length > idx) {
+            var badge = document.createElement('span');
+            badge.className = 'menu-tag menu-tag--today';
+            badge.textContent = 'Today\'s Special';
+            var meta = items[idx].querySelector('.menu-item-meta');
+            if (meta) { meta.appendChild(badge); }
+        }
+    })();
 
     /* ─── Newsletter ─── */
     var nlForm = document.getElementById('newsletterForm');
@@ -266,13 +299,26 @@
         counters.forEach(function (c) { obs.observe(c); });
     })();
 
+    /* ─── Parallax Hero ─── */
+    (function () {
+        var hero = document.querySelector('.hero');
+        var heroContent = document.querySelector('.hero-content');
+        if (!hero || !heroContent) return;
+        window.addEventListener('scroll', function () {
+            var scrolled = window.pageYOffset;
+            var rate = scrolled * 0.3;
+            if (rate < 200) { heroContent.style.transform = 'translateY(' + rate + 'px)'; }
+        }, { passive: true });
+    })();
+
     /* ─── Scroll Reveal ─── */
     (function () {
         var els = document.querySelectorAll(
             '.featured-card, .stat-item, .about-content, .about-media, ' +
             '.menu-item, .deal-card, .gallery-item, .testimonial-card, ' +
             '.event-card, .blog-card, .instagram-item, .reservation-form, ' +
-            '.res-info-card, .contact-info, .contact-map, .newsletter-wrapper'
+            '.res-info-card, .contact-info, .contact-map, .newsletter-wrapper, ' +
+            '.owner-card, .chef-card, .tourist-step, .event-form, .footer-owner-signature'
         );
         els.forEach(function (el) { el.classList.add('reveal'); });
         if (typeof IntersectionObserver !== 'undefined') {
@@ -327,7 +373,7 @@
             var nameEl = item ? item.querySelector('.name-en') : null;
             var name = nameEl ? nameEl.textContent.trim() : 'this item';
             var msg = 'Hello! I would like to order ' + name + ' from Rasioe.';
-            window.open('https://wa.me/923436847475?text=' + encodeURIComponent(msg), '_blank');
+            window.open('https://wa.me/923499740602?text=' + encodeURIComponent(msg), '_blank');
         });
     });
 

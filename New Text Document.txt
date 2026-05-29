@@ -6,17 +6,43 @@ restaurant located in Skardu, Pakistan.
   RESTAURANT IDENTITY & OWNERSHIP
 ═══════════════════════════════════════════════════════
 
-Restaurant Name     : Rasioe (راسیوے)
+Restaurant Name     : Rasioe
 Owner               : Zaffar Abbas
 Business Partner    : Ali
 Type                : Premium Fine Dining & Family Restaurant
 Location            : Alamdar Chowk, Skardu, Gilgit-Baltistan, Pakistan
-Contact             : [Add phone number]
-Email               : [Add email]
-Social Media        : [Add Instagram / Facebook / WhatsApp]
+Contact             : 03499740602
+Email               : zafarabbas1@gmail.com
+Social Media        : zafarbayya/ zafarabbas/ WhatsApp]
 Opening Hours       : Tuesday – Sunday | 12:00 PM – 11:00 PM
-Seating Capacity    : [Add number]
 Established         : 2024
+
+═══════════════════════════════════════════════════════
+  OWNER PROFILE — ZAFFAR ABBAS
+═══════════════════════════════════════════════════════
+
+The owner photo has been provided. Use it in the About Us page
+inside the owner profile card. Instructions for usage:
+
+  File Name   : WhatsApp_Image_2026-04-08_at_7_52_05_PM.jpeg
+  Usage       : Place as owner profile photo for Zaffar Abbas
+  Frame Style : Square crop, object-fit: cover, object-position: center top
+  Border      : 0.5px gold outer border (#c9a84c) with double-frame effect
+  Size        : 130x130px on desktop, 110x110px on mobile
+  Alt Text    : "Zaffar Abbas — Founder & Owner, Rasioe Restaurant"
+  Badge       : Gold filled label reading "Restaurant Owner" above the photo
+  Quote       : "Rasioe was born from a lifelong passion for authentic
+                 flavours and the warmth of genuine hospitality.
+                 Every dish we serve carries a piece of our soul."
+                 — Zaffar Abbas
+
+Partner Card (Ali):
+  - Use initials avatar "A" until real photo is provided
+  - Same card layout as owner card
+  - Badge: ghost style "Business Partner"
+  - Quote: "A visionary partner who brought excellence and precision
+             to Rasioe — turning a shared dream into Skardu's finest
+             dining destination."
 
 ═══════════════════════════════════════════════════════
   BRAND & VISUAL IDENTITY
@@ -38,13 +64,13 @@ Typography:
 
 Design Rules:
   - Black backgrounds exclusively — no white, no grey, no pastels
-  - Gold used for all accents, borders, icons, hover states
+  - Gold for all accents, borders, icons, hover states
   - Sharp corners on all buttons (border-radius: 0)
-  - Decorative elements: 0.5px gold divider lines, rotated diamond ornaments,
-    corner bracket frames, Art Deco geometric patterns
-  - Micro-animations on all hover states (0.3s ease transitions)
-  - Smooth scroll behavior across all sections
-  - No generic or colorful UI — every pixel must feel premium and intentional
+  - Decorative elements: 0.5px gold divider lines, rotated diamond
+    ornaments, corner bracket frames, Art Deco geometric patterns
+  - Micro-animations on all hover states (0.3s ease)
+  - Smooth scroll across all sections
+  - No generic UI — every pixel must feel premium and intentional
 
 ═══════════════════════════════════════════════════════
   WEBSITE PAGES & SECTIONS
@@ -52,84 +78,87 @@ Design Rules:
 
 1. HOME PAGE
    ─────────
-   - Full-screen animated hero with restaurant name in English + Urdu (راسیوے)
-   - Tagline: "Where Every Dish Tells a Story" / "جہاں ہر ڈش ایک کہانی سناتی ہے"
-   - Cinematic background video loop showing OUTSIDE view of Rasioe restaurant
-   - Sticky navigation bar with logo, menu links, and "Reserve a Table" CTA button
-   - Welcome message from Owner Zaffar Abbas
+   - Full-screen animated hero with restaurant name in English + Urdu
+   - Tagline: "Where Every Dish Tells a Story"
+     Urdu: "جہاں ہر ڈش ایک کہانی سناتی ہے"
+   - Cinematic background video loop — exterior view of restaurant
+   - Sticky navigation bar with logo, links, "Reserve a Table" CTA
+   - Welcome message from Owner Zaffar Abbas with his photo
    - Featured dishes section (3–4 hero dishes with photos)
-   - Counters/stats section: Total Dishes · Special Deals · Years of Excellence · Happy Guests
-   - Client testimonials / Google review-style cards
-   - Instagram feed section (latest posts)
+   - Stats counter: Total Dishes · Special Deals · Years · Happy Guests
+   - Customer testimonials / Google review-style cards
+   - Instagram feed section
    - Newsletter subscription bar
    - WhatsApp floating chat button
 
 2. ABOUT US
    ────────
    - Story of Rasioe — origin, vision, culinary philosophy
-   - Owner profile card: Zaffar Abbas — photo, short bio, personal message
-   - Business partner card: Ali — photo, short bio
-   - Chef introduction section (Head Chef + team)
+   - Owner profile card: Zaffar Abbas
+       · Use provided photo (WhatsApp_Image_2026-04-08_at_7_52_05_PM.jpeg)
+       · Gold double-frame border
+       · Title: Founder & Owner
+       · Personal quote displayed below name
+   - Partner card: Ali
+       · Initials avatar until photo provided
+       · Title: Co-Founder & Business Partner
+   - Chef & team introduction section
    - Core values: Quality · Authenticity · Hospitality · Heritage
-   - Timeline of milestones (founding, expansions, awards)
+   - Restaurant milestone timeline
    - Interior & exterior photo gallery with lightbox
-   - Animated video section: inside view of the restaurant (ambiance, kitchen,
-     dining area) — full-width cinematic autoplay loop
+   - Animated cinematic video — inside restaurant walkthrough
 
 3. MENU PAGE
    ─────────
-   Total: 60 dishes | All names in English AND Urdu side by side
+   Total Dishes: 60 | All names in English AND Urdu
 
    Categories:
-     - Appetizers / سٹارٹرز
-     - BBQ & Grill / بی بی کیو اور گرل
-     - Pakistani Classics / پاکستانی کھانے
-     - Continental / کانٹینینٹل
-     - Rice & Biryani / چاول اور بریانی
-     - Breads & Sides / روٹی اور سائیڈز
-     - Soups / سوپ
-     - Desserts / میٹھے
-     - Beverages & Juices / مشروبات
-     - 10 Special Family & Friends Deals / خاص فیملی ڈیلز (highlighted separately)
+     · Appetizers / سٹارٹرز
+     · BBQ & Grill / بی بی کیو اور گرل
+     · Pakistani Classics / پاکستانی کھانے
+     · Continental / کانٹینینٹل
+     · Rice & Biryani / چاول اور بریانی
+     · Breads & Sides / روٹی اور سائیڈز
+     · Soups / سوپ
+     · Desserts / میٹھے
+     · Beverages & Juices / مشروبات
+     · 10 Special Family & Friends Deals / خاص فیملی ڈیلز
 
-   Each dish card includes:
-     - High-quality dish photograph (placeholder until real images uploaded)
-     - Dish name in English + Urdu
-     - Description in English + Urdu
-     - Price (PKR)
-     - Spice level indicator
-     - Dietary tags: Veg / Non-Veg / Spicy / Recommended
-     - "Add to Order" / "WhatsApp Order" button
+   Each dish card:
+     · High-quality dish photo (placeholder until real images uploaded)
+     · Name in English + Urdu
+     · Description in English + Urdu
+     · Price in PKR
+     · Spice level indicator
+     · Tags: Veg / Non-Veg / Spicy / Chef's Recommended
+     · "WhatsApp Order" button
 
    Special Deals Section:
-     - Dedicated visual section with deal cards
-     - Each deal: name, included items, serving size, original vs deal price
-     - Bold "BEST VALUE" badge on top deals
-     - Family deal, Couple deal, Friends Platter clearly labeled
+     · 10 dedicated deal cards — highlighted separately
+     · Each: name, items included, serving size, original vs deal price
+     · "BEST VALUE" badge on top deals
+     · Family Deal / Couple Deal / Friends Platter labels
 
    Menu Features:
-     - Category filter tabs (All / BBQ / Desi / Continental etc.)
-     - Search bar to find any dish by name
-     - Printable PDF menu download button
-     - "Today's Special" badge on rotating featured item
+     · Category filter tabs
+     · Dish search bar
+     · Printable PDF menu download
+     · "Today's Special" rotating badge
 
 4. GALLERY
    ───────
    - Masonry photo grid: food, interior, exterior, events, team
-   - Separate tabs: Food · Ambiance · Events · Behind the Scenes
+   - Tabs: Food · Ambiance · Events · Behind the Scenes
    - Full-screen lightbox on click
-   - Video section: embedded cinematic videos (inside + outside restaurant)
-   - Upload-ready: structured to accept real photos from owner
+   - Cinematic video section (inside + outside restaurant)
+   - Upload-ready structure for real owner photos
 
 5. RESERVATIONS
    ─────────────
-   - Elegant booking form:
-       Full Name · Phone Number · Email
-       Date · Time · Number of Guests
-       Special Requests (birthday, anniversary, dietary needs)
-   - Real-time availability indicator
-   - WhatsApp booking option as alternative
-   - Confirmation message after submission
+   - Booking form: Name · Phone · Email · Date · Time · Guests
+   - Special requests field (birthday, anniversary, dietary)
+   - WhatsApp booking as alternative
+   - Confirmation message on submission
    - Reservation policy note
 
 6. EVENTS & OFFERS
@@ -137,112 +166,80 @@ Design Rules:
    - Corporate dining packages
    - Birthday & anniversary setups
    - Private dining room booking
-   - Seasonal promotions and limited-time deals
-   - Eid, New Year, and special occasion menus
+   - Seasonal promotions & limited-time deals
+   - Eid, New Year, special occasion menus
    - Event enquiry form
 
-7. BLOG / STORIES (Optional but recommended)
-   ──────────────────────────────────────────
-   - Behind-the-scenes stories
-   - Chef's notes on signature dishes
-   - Food culture articles
-   - SEO-optimized content for local search
-
-8. CONTACT PAGE
+7. CONTACT PAGE
    ─────────────
-   - Full address: Alamdar Chowk, Skardu, Gilgit-Baltistan
+   - Address: Alamdar Chowk, Skardu, Gilgit-Baltistan
    - Google Maps embed
    - Phone, Email, WhatsApp direct link
    - Opening hours table
-   - Social media links: Instagram, Facebook, TikTok
-   - Contact form (Name, Subject, Message)
-   - Directions guide for tourists visiting Skardu
+   - Social media links
+   - Contact form
+   - Tourist directions guide for Skardu visitors
 
-9. FOOTER
+8. FOOTER
    ───────
    - Logo + tagline
    - Quick navigation links
    - Opening hours
    - Social media icons
    - "© 2024 Rasioe. All Rights Reserved. Owned by Zaffar Abbas."
-   - Privacy Policy & Terms links
 
 ═══════════════════════════════════════════════════════
   MEDIA & CONTENT GUIDELINES
 ═══════════════════════════════════════════════════════
 
 Photos:
-  - Every dish must have its own dedicated high-resolution photograph
-  - Restaurant interior: dining area, lighting, decor, table setups
-  - Restaurant exterior: entrance, signage, building facade
-  - Team photos: owner Zaffar Abbas, partner Ali, chef, staff
-  - Use placeholder images (Unsplash food photography) until real photos provided
-  - All images must be WebP format, lazy-loaded, with alt text
+  - Owner photo: PROVIDED (use as instructed above)
+  - Every dish: dedicated high-resolution photograph
+  - Restaurant interior: dining area, lighting, decor, tables
+  - Restaurant exterior: entrance, signage, facade
+  - Partner Ali: placeholder initials until photo provided
+  - All images: WebP format, lazy-loaded, with alt text
+  - Placeholder source: Unsplash food photography
 
 Videos:
-  - Hero video: cinematic exterior view of Rasioe — autoplay, muted, looped
-  - About section video: interior walkthrough — warm lighting, ambiance, kitchen
-  - Videos must be MP4 format, compressed for fast loading
+  - Hero: cinematic exterior — autoplay, muted, looped, MP4
+  - About: interior walkthrough — warm ambiance, kitchen
   - Fallback poster image if video fails to load
 
 Urdu Content:
-  - All menu item names bilingual: English + Urdu
-  - All descriptions available in both languages
-  - Use Noto Nastaliq Urdu font from Google Fonts
-  - Urdu text direction: RTL (right-to-left)
+  - All menu names bilingual: English + Urdu side by side
+  - Font: Noto Nastaliq Urdu (Google Fonts)
+  - Urdu direction: RTL
   - Language toggle button: EN | اردو
 
 ═══════════════════════════════════════════════════════
   TECHNICAL REQUIREMENTS
 ═══════════════════════════════════════════════════════
 
-Stack:
-  - HTML5, CSS3 (custom properties), Vanilla JavaScript
-  - No heavy frameworks unless specifically requested
-  - Modular file structure: /pages /components /assets /css /js
-
-Performance:
-  - PageSpeed score target: 90+ on mobile and desktop
-  - Lazy load all images and videos
-  - Minified CSS and JS for production
-  - WebP image format throughout
-
-SEO:
-  - Meta title, description, Open Graph tags on every page
-  - Schema markup: Restaurant, Menu, LocalBusiness
-  - Sitemap.xml and robots.txt
-  - Keywords: "Rasioe Skardu", "best restaurant Skardu",
-    "fine dining Skardu", "Alamdar Chowk restaurant"
-
-Responsiveness:
-  - Fully responsive: mobile, tablet, desktop
-  - Mobile-first approach
-  - Touch-friendly menu and navigation
-  - WhatsApp button always visible on mobile
-
-Accessibility:
-  - ARIA labels on all interactive elements
-  - Alt text on all images
-  - Keyboard navigable
-  - Color contrast ratio 4.5:1 minimum
-
-Animation:
-  - GSAP or CSS animations for page load, scroll reveals
-  - Parallax scrolling on hero and gallery sections
-  - Smooth page transitions
-  - Staggered entrance animations on menu cards
+Stack         : HTML5, CSS3 (custom properties), Vanilla JavaScript
+Structure     : /pages /components /assets /css /js
+Performance   : PageSpeed 90+, lazy load all media, WebP images
+SEO           : Meta tags, Open Graph, Schema markup (Restaurant,
+                Menu, LocalBusiness), sitemap.xml, robots.txt
+Keywords      : "Rasioe Skardu", "best restaurant Skardu",
+                "fine dining Skardu", "Alamdar Chowk restaurant"
+Responsive    : Mobile-first, touch-friendly navigation
+Accessibility : ARIA labels, alt text, keyboard navigable
+Animations    : GSAP or CSS scroll reveals, parallax hero,
+                staggered menu card entrances
 
 ═══════════════════════════════════════════════════════
   DEVELOPER INSTRUCTIONS
 ═══════════════════════════════════════════════════════
 
-- Always maintain the black and gold luxury theme — no exceptions
-- Every new component must match the existing brand identity
-- Before adding any section, confirm it fits the fine dining aesthetic
-- When I say "add a page" or "build a section", follow all design rules above
-- When I upload real photos, replace placeholders immediately
+- Always maintain black and gold luxury theme — no exceptions
+- Every component must match the Rasioe brand identity
+- Owner photo (Zaffar Abbas) must appear on: Hero welcome
+  section, About Us owner card, and Footer signature
+- When I upload new photos (dishes, interior, Ali), replace
+  placeholders immediately in the correct sections
 - Comment all code clearly in English
-- If a design decision could break the luxury aesthetic, flag it and suggest
-  a better approach before proceeding
-- Suggest improvements proactively — you are not just a coder,
-  you are a co-creator of the Rasioe brand experience
+- If any design decision risks breaking the luxury aesthetic,
+  flag it and suggest a better approach before proceeding
+- You are not just a coder — you are a co-creator of the
+  Rasioe brand experience. Suggest improvements proactively.
