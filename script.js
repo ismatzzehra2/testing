@@ -453,6 +453,18 @@
         });
     });
 
+    /* ─── Deal Order buttons ─── */
+    document.querySelectorAll('.deal-card .btn').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            var card = this.closest('.deal-card');
+            var nameEl = card ? card.querySelector('h4') : null;
+            var name = nameEl ? nameEl.textContent.trim() : 'this deal';
+            var msg = 'Hello! I would like to order the ' + name + ' deal from Rasioe.';
+            window.open('https://wa.me/923499740602?text=' + encodeURIComponent(msg), '_blank');
+        });
+    });
+
     /* ─── Splash Screen ─── */
     (function () {
         var splash = document.getElementById('splash');
