@@ -14,10 +14,54 @@
     var lightboxClose = document.getElementById('lightboxClose');
     var lightboxPrev = document.getElementById('lightboxPrev');
     var lightboxNext = document.getElementById('lightboxNext');
+    var musicToggle = document.getElementById('musicToggle');
 
     var currentLang = 'en';
     var lightboxImages = [];
     var lightboxIndex = 0;
+
+    /* --- Soft opening music --- */
+    (function () {
+        var backgroundMusic = document.getElementById('backgroundMusic');
+        if (!musicToggle || !backgroundMusic) return;
+
+        var isPlaying = false;
+        backgroundMusic.volume = 0.28;
+
+        function updateButton() {
+            musicToggle.classList.toggle('is-playing', isPlaying);
+            musicToggle.setAttribute('aria-pressed', String(isPlaying));
+            musicToggle.innerHTML = isPlaying ? '<i class="fas fa-volume-high"></i>' : '<i class="fas fa-volume-xmark"></i>';
+        }
+
+        function startMusic() {
+            backgroundMusic.play().then(function () {
+                isPlaying = true;
+                updateButton();
+            }).catch(function () {
+                isPlaying = false;
+                updateButton();
+            });
+        }
+
+        function stopMusic() {
+            backgroundMusic.pause();
+            isPlaying = false;
+            updateButton();
+        }
+
+        musicToggle.addEventListener('click', function () {
+            if (isPlaying) stopMusic();
+            else startMusic();
+        });
+
+        window.addEventListener('load', startMusic);
+        document.addEventListener('pointerdown', function () {
+            if (!isPlaying) startMusic();
+        }, { once: true });
+
+        updateButton();
+    })();
 
     /* ─── Hero title letter-by-letter split ─── */
     (function () {

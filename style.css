@@ -2435,6 +2435,33 @@ footer::before {
     color: var(--black);
 }
 
+/* --- Soft Music Toggle --- */
+.music-toggle {
+    position: fixed;
+    bottom: 142px;
+    right: 28px;
+    z-index: 998;
+    width: 44px;
+    height: 44px;
+    background: var(--black-elevated);
+    border: 0.5px solid var(--gold-border);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+.music-toggle:hover,
+.music-toggle.is-playing {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+.music-toggle.is-playing {
+    box-shadow: 0 0 18px rgba(201,168,76,0.16);
+}
+
 /* ─── Back to Top ─── */
 .back-to-top {
     position: fixed;
@@ -2765,6 +2792,7 @@ footer::before {
     .events-grid { grid-template-columns: 1fr; }
     .hero-actions { flex-direction: column; align-items: center; }
     .whatsapp-float { right: 16px; bottom: 80px; }
+    .music-toggle { right: 16px; bottom: 132px; }
     .back-to-top { right: 16px; }
 }
 
