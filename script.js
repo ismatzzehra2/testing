@@ -492,7 +492,7 @@
             var item = this.closest('.menu-item');
             var nameEl = item ? item.querySelector('.name-en') : null;
             var name = nameEl ? nameEl.textContent.trim() : 'this item';
-            var msg = 'Hello! I would like to order ' + name + ' from Rasioe.';
+            var msg = 'Hello! I would like to order ' + name + ' from Rasoie.';
             window.open('https://wa.me/923499740602?text=' + encodeURIComponent(msg), '_blank');
         });
     });
@@ -504,7 +504,7 @@
             var card = this.closest('.deal-card');
             var nameEl = card ? card.querySelector('h4') : null;
             var name = nameEl ? nameEl.textContent.trim() : 'this deal';
-            var msg = 'Hello! I would like to order the ' + name + ' deal from Rasioe.';
+            var msg = 'Hello! I would like to order the ' + name + ' deal from Rasoie.';
             window.open('https://wa.me/923499740602?text=' + encodeURIComponent(msg), '_blank');
         });
     });
